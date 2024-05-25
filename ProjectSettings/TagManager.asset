@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Spikes
+  - DestroyTrigger
+  - Death
+  - Ground
+  - Diamond
+  - Coin
+  - Hint
+  - Water
+  - Heart
+  - Box
+  - WaitArea
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2120834043
+    locked: 0
+  - name: Environment
+    uniqueID: 475609995
+    locked: 0
+  - name: Ground
+    uniqueID: 1898556735
+    locked: 0
+  - name: UI
+    uniqueID: 2128552849
+    locked: 0
+  - name: Characters
+    uniqueID: 1380920903
+    locked: 0
+  - name: Water
+    uniqueID: 403914933
+    locked: 0
