@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6769141125624302035}
   - component: {fileID: 8433645239683291922}
   - component: {fileID: 6582237120731957984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6828942046552575726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8666843896693543857}
   - component: {fileID: 5170347448250048254}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 8227531741409721516}
   - component: {fileID: 7710208847040089935}
   - component: {fileID: 994904215325826645}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 9008898852918905546}
   - component: {fileID: 1519051160615155155}
   - component: {fileID: 3862130451986478796}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: area
   m_TagString: WaitArea
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6487834418808200665}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fly enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 6982619071284238200}
   - component: {fileID: 4942191380769059447}
   - component: {fileID: 7492571357203240547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 4396022219597315610}
   - component: {fileID: 490724580439221454}
   - component: {fileID: 6405264149386004070}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

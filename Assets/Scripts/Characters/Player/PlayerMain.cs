@@ -24,6 +24,10 @@ public class PlayerMain : MonoBehaviour, IDamageable
     private float curHealth;
     private float damage;
 
+    private bool isDamageSound = false;
+
+    private Coroutine reloading;
+
     private void Awake()
     {
         levelUI = FindFirstObjectByType<LevelUI>();
@@ -58,8 +62,8 @@ public class PlayerMain : MonoBehaviour, IDamageable
         if (playerInput.IsPause)
             Pause();
 
-        if (playerInput.IsReloading && curBullets != maxBullets)
-            StartCoroutine(Reloading());
+        if (playerInput.IsReloading && curBullets != maxBullets && reloading == null)
+            reloading = StartCoroutine(nameof(Reloading));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -74,7 +78,10 @@ public class PlayerMain : MonoBehaviour, IDamageable
             OnHint(true, other.GetComponent<HintTable>().GetHintText());
 
         if (other.CompareTag(GlobalStringVariables.DESTROY_TRIGGER_TAG))
+        {
             other.GetComponent<DestroyTrigger>().DestroyObjects();
+            AudioController.Instance.PlayAlertSound();
+        }
 
         if (other.CompareTag(GlobalStringVariables.WAIT_AREA_TRIGGER_TAG))
             other.GetComponent<WaitArea>().SetTarget(transform);
@@ -82,18 +89,21 @@ public class PlayerMain : MonoBehaviour, IDamageable
         if (other.CompareTag(GlobalStringVariables.DIAMOND_TAG))
         {
             OnDiamondGained();
+            AudioController.Instance.PlayDiamondSound();
             Destroy(other.gameObject);
         }
 
         if (other.CompareTag(GlobalStringVariables.COIN_TAG))
         {
             OnCoinGained();
+            AudioController.Instance.PlayCoinSound();
             Destroy(other.gameObject);
         }
 
         if (other.CompareTag(GlobalStringVariables.HEART_TAG))
         {
             OnHPGained();
+            AudioController.Instance.PlayHeartSound();
             Destroy(other.gameObject);
         }
     }
@@ -171,10 +181,11 @@ public class PlayerMain : MonoBehaviour, IDamageable
     private IEnumerator Reloading()
     {
         curBullets = 0;
-        _bulletText.text = "Перезарядка...";
+        _bulletText.text = "Перезарядка";
         AudioController.Instance.PlayReloadSound();
         yield return new WaitForSeconds(GlobalConfigurationVariables.PLAYER_RELOADING_TIME);
         curBullets = maxBullets;
+        reloading = null;
         _bulletText.text = $"{curBullets} / {maxBullets}";
     }
     private void Pause()
@@ -183,11 +194,24 @@ public class PlayerMain : MonoBehaviour, IDamageable
     }
     public void SetDamage(float damage)
     {
+        if (damage > 0 && !isDamageSound)
+        {
+            StartCoroutine(nameof(DamageSound));
+        }
+
         curHealth = Mathf.Clamp(curHealth - damage, 0f, maxHealth);
         _healthBar.value = curHealth > 0 ? curHealth / maxHealth : 0f;
 
-        if (curHealth <= 0f)
+        if (curHealth <= 0f && levelUI.IsGameStarted())
             OnDeath();
+    }
+
+    private IEnumerator DamageSound()
+    {
+        isDamageSound = true;
+        AudioController.Instance.PlayHeroDamageSound();
+        yield return new WaitForSeconds(0.2f);
+        isDamageSound = false;
     }
 
     public float GetDamage()

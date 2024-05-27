@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305748108470818703}
   - component: {fileID: 1755018197618919898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5943776594268261404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 7871085104346461918}
   - component: {fileID: 6962969028891664384}
   - component: {fileID: 943736915994382914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012603, y: 0.1906}
-  m_SizeDelta: {x: 1, y: 0.2812}
+  m_AnchoredPosition: {x: 0.000000029802, y: 0.1906}
+  m_SizeDelta: {x: 1.5, y: 0.2812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6962969028891664384
 CanvasRenderer:
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 7994275453688436327}
   - component: {fileID: 9155542552513354531}
   - component: {fileID: 7233911431644146843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 4072171750931464336}
   - component: {fileID: 8949575233951805758}
   - component: {fileID: 351396356669098771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 8356038417443812674}
   - component: {fileID: 2021396341199266165}
   - component: {fileID: 8367741384020570327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5279,7 +5279,7 @@ GameObject:
   - component: {fileID: 869167650620896673}
   - component: {fileID: 1281750300925333597}
   - component: {fileID: 7071117819641225257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5494,7 +5494,7 @@ GameObject:
   - component: {fileID: 8505613292324780027}
   - component: {fileID: 5623269014250668048}
   - component: {fileID: 2369616025715793648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5567,7 +5567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8249640942256372229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -5599,7 +5599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5063855580553174777}
   - component: {fileID: 5121475273294798554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5682,7 +5682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3657719131453892573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

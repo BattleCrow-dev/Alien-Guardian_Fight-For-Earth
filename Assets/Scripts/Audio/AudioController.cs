@@ -19,6 +19,13 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip _jumpSound;
     [SerializeField] private AudioClip _gameOverSound;
     [SerializeField] private AudioClip _winSound;
+    [SerializeField] private AudioClip _coinSound;
+    [SerializeField] private AudioClip _diamondSound;
+    [SerializeField] private AudioClip _heartSound;
+    [SerializeField] private AudioClip _heroDamageSound;
+    [SerializeField] private AudioClip _enemyDamageSound;
+    [SerializeField] private AudioClip _alertSound;
+    [SerializeField] private AudioClip _boxSound;
 
     private void Awake()
     {
@@ -83,5 +90,37 @@ public class AudioController : MonoBehaviour
     public void PlayWinSound()
     {
         _SFXSource.PlayOneShot(_winSound);
+    }
+    public void PlayCoinSound()
+    {
+        _SFXSource.PlayOneShot(_coinSound);
+    }
+    public void PlayDiamondSound()
+    {
+        _SFXSource.PlayOneShot(_diamondSound);
+    }
+    public void PlayHeartSound()
+    {
+        _SFXSource.PlayOneShot(_heartSound);
+    }
+    public void PlayHeroDamageSound()
+    {
+        _SFXSource.PlayOneShot(_heroDamageSound);
+    }
+    public void PlayEnemyDamageSound()
+    {
+        _SFXSource.PlayOneShot(_enemyDamageSound);
+    }
+    public void PlayAlertSound()
+    {
+        _SFXSource.PlayOneShot(_alertSound);
+    }
+    public void PlayBoxSound()
+    {
+        _SFXSource.PlayOneShot(_boxSound);
+    }
+    public void PlayCustomSound(AudioClip clip)
+    {
+        _SFXSource.PlayOneShot(clip);
     }
 }

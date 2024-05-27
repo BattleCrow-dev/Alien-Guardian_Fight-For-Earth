@@ -13,6 +13,7 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private Button _playButton;
     [SerializeField] private Button _settingsButton;
     [SerializeField] private Button _backButton;
+    [SerializeField] private Button _exitButton;
 
     [Header("UI texts")]
     [SerializeField] private TMP_Text _pointsText;
@@ -41,6 +42,11 @@ public class MenuUI : MonoBehaviour
             _settingsPanel.SetActive(false);
             _mainPanel.SetActive(true);
             AudioController.Instance.PlayButtonSound();
+        });
+
+        _exitButton.onClick.AddListener(() =>
+        {
+            Application.Quit();
         });
 
         _musicSlider.onValueChanged.AddListener(delegate {

@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
         if (!collision.CompareTag(mineTag) && collision.CompareTag(targetTag) && collision.gameObject.TryGetComponent(out IDamageable _))
         {
             collision.gameObject.GetComponent<IDamageable>().SetDamage(damage);
+            AudioController.Instance.PlayEnemyDamageSound();
             Destroy(gameObject);
         }
         else if (collision.CompareTag(GlobalStringVariables.GROUND_TAG))

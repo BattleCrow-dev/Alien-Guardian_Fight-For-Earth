@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8714083421092414114}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: point2
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8208243114383530454}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 1810587577466137556}
   - component: {fileID: 6398350276611260429}
   - component: {fileID: 2570182064921363794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3752728911284534529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 8162606443617278613}
   - component: {fileID: 869638731580287682}
   - component: {fileID: 6085528224692703300}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 4248075429782036389}
   - component: {fileID: 3100200945892882669}
   - component: {fileID: 3114793364783767290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8195606435372553486}
   - component: {fileID: 1754240398279758670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 7728519050854552600}
   - component: {fileID: 7277434424129431881}
   - component: {fileID: 8968335482232225944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 2282911689891183857}
   - component: {fileID: 6882817555927688263}
   - component: {fileID: 6440609492194599068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: area
   m_TagString: WaitArea
   m_Icon: {fileID: 0}
@@ -754,7 +754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8666277856556552027}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shoot enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9167669491647597503}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: point1
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -821,7 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4862242822757218430}
   - component: {fileID: 6245440721181808692}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

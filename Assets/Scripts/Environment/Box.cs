@@ -15,6 +15,7 @@ public class Box : MonoBehaviour
             if (_prefabInBox)
                 Instantiate(_prefabInBox, transform.position, transform.rotation);
 
+            AudioController.Instance.PlayBoxSound();
             Destroy(gameObject);
         }
     }

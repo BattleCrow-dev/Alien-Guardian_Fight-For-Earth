@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7394073983742934640}
   - component: {fileID: 5873111331426565173}
   - component: {fileID: 156270626180748933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 1441647259779504592}
   - component: {fileID: 577636890258002893}
   - component: {fileID: 7958637086965271108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8410133734670130431}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 545128915784185156}
   - component: {fileID: 8822817066923163517}
   - component: {fileID: 7433643424505096348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6878612789806735075}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: point1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -431,7 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4335906043087730187}
   - component: {fileID: 5055366264941990174}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 8941090702499079}
   - component: {fileID: 7768683896218190716}
   - component: {fileID: 1737586076894675317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5583581201773315663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: point2
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744208145908876187}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Patrol enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

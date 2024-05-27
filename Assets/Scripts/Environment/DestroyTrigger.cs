@@ -9,5 +9,6 @@ public class DestroyTrigger : MonoBehaviour
     {
         foreach (GameObject obj in _objectsToDestroy)
             Destroy(obj);
+        Destroy(gameObject);
     }
 }

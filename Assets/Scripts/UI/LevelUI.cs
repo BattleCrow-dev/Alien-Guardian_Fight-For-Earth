@@ -41,7 +41,6 @@ public class LevelUI : MonoBehaviour
 
     private void Awake()
     {
-        AudioController.Instance.ChangeMusicToGame();
         _hintPanel.SetActive(false);
         _cutscenePanel.SetActive(false);
 
@@ -51,10 +50,13 @@ public class LevelUI : MonoBehaviour
 
     private void Start()
     {
+        AudioController.Instance.StopMusic();
         if (_haveStartCutscene)
             StartCutscene();
-        else
+        else {
             isGameStarted = true;
+            AudioController.Instance.ChangeMusicToGame();
+        }
 
         GlobalData.EraseData();
     }
@@ -89,6 +91,8 @@ public class LevelUI : MonoBehaviour
         isGameStarted = true;
         _infoPanel.SetActive(true);
         _cineCamera.Follow = firstTarget;
+        AudioController.Instance.StopSFX();
+        AudioController.Instance.ChangeMusicToGame();
         _cutscenePanel.SetActive(false);
     }
 
@@ -113,6 +117,7 @@ public class LevelUI : MonoBehaviour
         {
             _cineCamera.Follow = _frames[i].Target;
             _cutsceneText.text = _frames[i].Text;
+            AudioController.Instance.PlayCustomSound(_frames[i].Voice);
             yield return new WaitForSecondsRealtime(_frames[i].Delay);
         }
 
@@ -121,9 +126,13 @@ public class LevelUI : MonoBehaviour
 
     public void ShowLoseScene()
     {
+        isGameStarted = false;
         GlobalData.FINAL_POINTS = GlobalData.COINS_GAINED_COUNT * GlobalConfigurationVariables.COIN_POINTS_VALUE
             + GlobalData.DIAMOND_GAINED_COUNT * GlobalConfigurationVariables.DIAMOND_POINTS_VALUE
             + GlobalData.ENEMY_KILLED_COUNT * GlobalConfigurationVariables.ENEMY_POINTS_VALUE;
+
+        if (PlayerPrefs.GetInt(GlobalStringVariables.LEVEL_POINTS_SAVE_NAME) < GlobalData.FINAL_POINTS)
+            PlayerPrefs.SetInt(GlobalStringVariables.LEVEL_POINTS_SAVE_NAME, GlobalData.FINAL_POINTS);
 
         AudioController.Instance.PlayGameOverSound();
         SceneManager.LoadScene(_loseSceneID);
@@ -131,6 +140,7 @@ public class LevelUI : MonoBehaviour
 
     public void ShowWinScene()
     {
+        isGameStarted = false;
         GlobalData.FINAL_POINTS = GlobalData.COINS_GAINED_COUNT * GlobalConfigurationVariables.COIN_POINTS_VALUE 
             + GlobalData.DIAMOND_GAINED_COUNT * GlobalConfigurationVariables.DIAMOND_POINTS_VALUE
             + GlobalData.ENEMY_KILLED_COUNT * GlobalConfigurationVariables.ENEMY_POINTS_VALUE;

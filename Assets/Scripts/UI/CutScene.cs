@@ -7,4 +7,5 @@ public class CutScene
     public Transform Target;
     public string Text;
     public float Delay;
+    public AudioClip Voice;
 }
